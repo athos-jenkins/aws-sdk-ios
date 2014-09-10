@@ -26,7 +26,7 @@
 @property (nonatomic, retain) NSString *storageClass;
 
 /** The time for this transition in days **/
-@property (nonatomic, assign) int32_t transitionDays;
+@property (nonatomic, assign) NSInteger transitionDays;
 
 /** 
  * The date for this transition as an absolute date.

@@ -516,7 +516,7 @@
             [timeoutTimer invalidate];      //  invalidate also releases the object.
         }
 
-        AMZLogDebug(@"Response Status Code : %d", response.httpStatusCode);
+        AMZLogDebug(@"Response Status Code : %ld", (long)response.httpStatusCode);
         if ( [self shouldRetry:response]) {
             AMZLogDebug(@"Retrying Request: %d", retries);
 
@@ -550,7 +550,7 @@
         return response;
     }
 
-    AMZLogDebug(@"Received response from server. RequestId: %@. HTTP: %d. Id2: %@.", response.requestId, response.httpStatusCode, response.id2);
+    AMZLogDebug(@"Received response from server. RequestId: %@. HTTP: %ld. Id2: %@.", response.requestId, (long)response.httpStatusCode, response.id2);
     AMZLogDebug(@"Response [%@]", response);
 
     return response;

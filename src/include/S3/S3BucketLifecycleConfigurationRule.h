@@ -36,7 +36,7 @@
 @property (nonatomic, retain) NSString *prefix;
 
 /** The expiration time for this rule in days **/
-@property (nonatomic, assign) int32_t expirationInDays;
+@property (nonatomic, assign) NSInteger expirationInDays;
 
 /** 
  * The expiration date for this rule as an absolute date.
