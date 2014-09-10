@@ -50,7 +50,7 @@ extern NSString *const AWSClockSkewError;
 @property (nonatomic, readonly) NSData *body;
 
 /** The header of the html response. */
-@property (nonatomic, readonly) NSDictionary *responseHeader;
+@property (nonatomic, strong) NSDictionary *responseHeader;
 
 /** The HTTP status code of the response from the service. */
 @property (nonatomic) NSInteger httpStatusCode;

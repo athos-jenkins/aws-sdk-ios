@@ -19,10 +19,6 @@
 #import "S3ErrorResponseHandler.h"
 #import "AmazonErrorHandler.h"
 
-@interface S3Response ()
-@property (nonatomic, readwrite, retain) NSDictionary *responseHeader;
-@end
-
 @implementation S3Response
 
 -(id)init

@@ -20,10 +20,6 @@
 
 NSString *const AWSClockSkewError = @"AWSClockSkewError";
 
-@interface AmazonServiceResponse ()
-@property (nonatomic, readwrite, retain) NSDictionary *responseHeader;
-@end
-
 @implementation AmazonServiceResponse
 
 @synthesize httpStatusCode;
